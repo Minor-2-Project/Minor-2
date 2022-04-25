@@ -9,3 +9,8 @@ Commons-codec-1.6.jar
 Hamcrest-core-1.3.jar
 junit-4.13.2.jar
 
+*Classes*
+•	class TwoFactor:
+This class acts as the driver class. The generated secret key is displayed in the main function of this class. The function where the secret key is generated is called in this class. After displaying the secret key, the QR image URL is also displayed using which the user can directly load the key in their device. Then the secret code is displayed after the specified time interval i.e., 30 seconds. To display this code, the method which returns it is called here.
+•	class TOTPAuth:
+       This class is responsible for all the computing. The secret key and the rapidly changing secret codes are updated in the methods of this class. The QR image and its URL are also generated in this class.
